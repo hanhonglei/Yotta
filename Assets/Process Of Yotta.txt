@@ -1,0 +1,78 @@
+*--------------------------------------------------------
+*Author: by CCat(-^_^-)
+*Date of Created: 2014.11.21
+*Description: The file is used to record the processes and the problems of Yotta
+*MOTTO: YOU HAVEN'T FINISHED YOUR JOURNEY YET, HANG ON A BIT LONGER!!
+*--------------------------------------------------------
+
+DATE:2014.11.21(EVENTS)
+DES:
+1. A. Finished the ReadExcel file
+   B. Test if the var is not public, can it be called in other files by "CLASS.xxx" form
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+1. the function have to be public if is needed to be called in other files~~
+2. and so does the var
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+2. Finish the function of the Spawn and send a copy to the designer
+
+It's all for today  =^_^= HAVE A NICE DAY!
+
+DATE:2014.11.24(EVENTS)
+DES:
+1. Learn the Spawn method and try to verify the SpawnManager in Yotta 1.1 
+2. Whatever, abandon the coroutinate for now
+
+Now do the following things:
+1/ Build a PoolList and add all the towers and visitors to the poolList
+2/ Each time, build a 
+
+
+THINGS LIST
+1、	读表(check~~)、Spawn(check for now~~)
+2、	建筑物的范围显示（暂时美术绘制）(直接加上，显示两三秒之后设置其active为false)
+3、	角色反馈（生气--------------额外加图（+火焰或者表情），使用到Animator，添加参数设置）(check~~)
+4、	加金币放在建筑物上(check~~)
+5、	金币系统 （数值更新+）（check~~）
+6、	评分系统
+7、	升级建筑(check~~)
+8、	第二关卡(check~~)
+9、	选关(check~~)
+
+Version 1.2 THINGS LIST
+程序
+1.	建筑影响范围调整，目前过大，同时这范围对玩家的反馈要优化
+	METHOD: Design a test and check the range value in "OverlapCircleAll" method really means. 
+2.	其他与数值调整想配合
+3. Rewrite the whole building method and resource method
+4. Add the message box illustration
+
+==========================================
+后续需要解决的问题：
+1、选择图标的时候应该先显示范围，或者预显示建筑物的信息
+2、信息显示~~
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4.1 
+大的逻辑的调整：建塔、建塔的标识物、范围、升级、售卖
+细节调整；
+baseBuilding的位置的调整，baseBuilding中元素的Arrangement
+indicator的清除和显示
+
+4.2
+细节调整
+indicator的清除（baseBuilding以及UpgradeUI和DismantleUI的清除）
+essencehead的位置的调整
+实现：
+界面跳转
+情感的UI显示
+
+需要调整的地方：
+1、进入建筑物的表情
+2、essencehead以及coinhead的生成以及销毁方式(好吧，这里一堆warning， whatever)----暂时使用原来的方法------算了，又改了。。。---又改回去了。。。。
+3、TowerID\VisitorID的使用需要重新更新
+4、N多的Warning，之后有时间一定要一一解决掉！！
+
