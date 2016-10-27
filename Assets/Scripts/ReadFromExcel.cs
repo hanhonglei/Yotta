@@ -57,21 +57,23 @@ public class ReadFromExcel : MonoBehaviour {
 	{
 		dtData.Clear();
 		dtData.Reset();
-		string con = "Driver={Microsoft Excel Driver (*.xls)}; DriverId=790; Dbq="+filename+";";
-		//Debug.Log(sheetname);
-		string yourQuery = "SELECT * FROM ["+sheetname+"$]"; 
+        //string con = "Driver={Microsoft Excel Driver (*.xls)}; DriverId=790; Dbq="+filename+";";
+        string con = "Driver={Microsoft Excel Driver (*.xls, *.xlsx, *.xlsm, *.xlsb)};DriverId=790; Dbq=" + filename + ";";
+		string yourQuery = "SELECT * FROM ["+sheetname+"$]";
 		// our odbc connector 
 		OdbcConnection oCon = new OdbcConnection(con); 
 		// our command object 
 		OdbcCommand oCmd = new OdbcCommand(yourQuery, oCon);
 		// table to hold the data 
-		
+	
 		// open the connection 
-		oCon.Open(); 
+		oCon.Open();
+
 		// lets use a datareader to fill that table! 
-		OdbcDataReader rData = oCmd.ExecuteReader(); 
+		OdbcDataReader rData = oCmd.ExecuteReader();
 		// now lets blast that into the table by sheer man power! 
-		dtData.Load(rData); 
+        // Still has problems of this code line [10/27/2016 Han]
+		dtData.Load(rData);
 		// close that reader! 
 		rData.Close(); 
 		// close your connection to the spreadsheet! 
