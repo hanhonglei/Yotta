@@ -2,6 +2,8 @@
 
 - More information, please feel free to visit my personal website [here](https://hanhonglei.github.io/).
 
+- The execute application can be downloaded from [here](http://pan.baidu.com/s/1kVM3vwV).
+
 2D tower defense game based on Unity
 ## 游戏简介
 游戏名称：YOTTA（游塔）
