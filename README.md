@@ -61,3 +61,6 @@ CPU： i5-3230M(双核)
 
 	email：hanhonglei@cuc.edu.cn
 
+----
+
+- This project is under [GNU GENERAL PUBLIC LICENSE](https://www.gnu.org/licenses/), please check it in the root folder.
